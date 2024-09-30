@@ -1,0 +1,196 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-head {
+  position: relative;
+}
+
+h1 {
+  color: #021427;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #2c3e50;
+  text-align: center;
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:20px 30px;
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+input {
+  padding: 12px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: .9rem;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: .9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 0 5px;
+}
+
+.auth-btn {
+  margin: 0;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.btn-delete {
+  background-color: rgb(241, 7, 7);
+}
+
+.btn-delete:hover {
+  background-color: rgb(195, 13, 13);
+}
+
+.btn-update {
+  background-color: green;
+}
+
+.btn-update:hover {
+  background-color: rgb(6, 147, 27);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.register-link {
+  color: rgb(0, 81, 139);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.register-link:hover {
+  color: rgb(47, 114, 163);
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.input-error {
+  border-color: red;
+}
+
+.login-history {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.login-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.login-history li {
+  margin-bottom: 5px;
+}
+
+.btn-logout {
+  background-color: rgb(206, 11, 11);
+  position: absolute;
+  right: 0;
+  bottom: -120px;
+}
+
+.btn-logout:hover {
+  background-color: rgb(122, 15, 15);
+}
+
+/* responsive styling */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  form {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  input {
+    font-size: 0.8rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
+
+  .btn-update,
+  .btn-delete {
+    margin: 6px 0;
+  }
+
+  .btn-logout {
+    position: absolute;
+    margin: 20px 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+}
